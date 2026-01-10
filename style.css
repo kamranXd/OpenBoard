@@ -1,0 +1,21 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.options-cont{
+    height:4rem;
+    width: 3.5rem;
+    background-color: lightblue;
+    position: absolute;
+    top: 1rem;
+    left: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 1.5rem;
+}
