@@ -6,7 +6,7 @@ body{
     padding: 0;
 }
 
-.options-cont{
+.optionsCont{
     height:4rem;
     width: 3.5rem;
     background-color: #f1f2f6;
@@ -42,7 +42,7 @@ body{
     position: absolute;
     background-color: f1f2f6;
     height: 5rem;
-    width: 11rem;
+    width: 7rem;
     top: 7rem;
     left: 24rem;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
@@ -82,4 +82,18 @@ body{
 }
 .blue{
     background-color: blue;
+}
+
+.eraser-tool-cont{
+    height: 2rem;
+    width: 7rem;
+    background-color: lightblue;
+    position: absolute;
+    top: 7rem;
+    left: 32rem;
+    background-color: #f1f2f6;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+}
+.eraser-tool-cont input{
+    width: 80%;
 }
