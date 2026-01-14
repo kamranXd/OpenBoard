@@ -47,6 +47,7 @@ body{
     left: 24rem;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
     border-radius: 3px;
+    display: none ;
 }
 
 .pencil-width-cont{
@@ -89,6 +90,7 @@ body{
     width: 7rem;
     background-color: lightblue;
     position: absolute;
+    display: none;
     top: 7rem;
     left: 32rem;
     background-color: #f1f2f6;

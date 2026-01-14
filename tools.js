@@ -2,6 +2,11 @@ let toolsCont = document.querySelector(".tools-cont");
 let optionsCont = document.querySelector(".options-cont");
 let pencilToolCont = document.querySelector(".pencil-tool-cont");
 let eraserToolCont = document.querySelector(".eraser-tool-cont");
+let pencil = document.querySelector(".pencil");
+let eraser = document.querySelector(".eraser");
+
+let pencilFlag = false;
+let eraserFlag = false;
 let optionsFlag = true;
 // true -> tools visible, false -> tools hidden
 
@@ -31,3 +36,23 @@ function closeTools() {
     pencilToolCont.style.display = "none";
 
 }
+
+pencil.addEventListener("click", (e)=>{
+    // true - show pencil tool, flase - hide pencil tool
+    pencilFlag = !pencilFlag;
+    if(pencilFlag){
+        pencilToolCont.style.display = "block";
+    }else{
+        pencilToolCont.style.display = "none";
+    }
+})
+
+eraser.addEventListener("click", (e)=>{
+    // true - show pencil tool, flase - hide pencil tool
+    eraserFlag = !eraserFlag;
+    if(eraserFlag){
+        eraserToolCont.style.display = "flex";
+    }else{
+        eraserToolCont.style.display = "none";
+    }
+})
