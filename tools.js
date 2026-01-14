@@ -1,4 +1,7 @@
+let toolsCont = document.querySelector(".tools-cont");
 let optionsCont = document.querySelector(".options-cont");
+let pencilToolCont = document.querySelector(".pencil-tool-cont");
+let eraserToolCont = document.querySelector(".eraser-tool-cont");
 let optionsFlag = true;
 // true -> tools visible, false -> tools hidden
 
@@ -16,10 +19,15 @@ function openTools() {
     let iconElem = optionsCont.children[0];
     iconElem.classList.remove("fa-bars");
     iconElem.classList.add("fa-times"); // X when open
+    toolsCont.style.display = "flex";
 }
 
 function closeTools() {
     let iconElem = optionsCont.children[0];
     iconElem.classList.remove("fa-times");
     iconElem.classList.add("fa-bars"); // Bars when closed
+    toolsCont.style.display = "none";
+    eraserToolCont.style.display = "none";
+    pencilToolCont.style.display = "none";
+
 }
